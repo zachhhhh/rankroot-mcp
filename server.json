@@ -3,12 +3,12 @@
   "name": "io.github.zachhhhh/rankroot",
   "title": "RankRoot: AI visibility audit",
   "description": "Audit a site's visibility to ChatGPT, Perplexity, Claude and AI agents. Generates llms.txt.",
-  "websiteUrl": "https://rankroot-ai.netlify.app",
-  "version": "0.1.0",
+  "websiteUrl": "https://getrankroot.com",
+  "version": "0.1.1",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://rankroot-ai.netlify.app/api/mcp"
+      "url": "https://getrankroot.com/api/mcp"
     }
   ]
 }

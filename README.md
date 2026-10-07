@@ -2,9 +2,9 @@
 
 **Remote MCP server** that tells you how visible a website is to AI answer engines (ChatGPT, Perplexity, Claude, Google AI Overviews) and AI agents, then generates the fixes.
 
-- Endpoint (Streamable HTTP, no auth required): `https://rankroot-ai.netlify.app/api/mcp`
+- Endpoint (Streamable HTTP, no auth required): `https://getrankroot.com/api/mcp`
 - Official MCP Registry: `io.github.zachhhhh/rankroot`
-- Website: https://rankroot-ai.netlify.app · Docs: https://rankroot-ai.netlify.app/agents
+- Website: https://getrankroot.com · Docs: https://getrankroot.com/agents
 
 ## Tools
 
@@ -20,7 +20,7 @@ Claude Desktop / Cursor / any MCP client:
 ```json
 {
   "mcpServers": {
-    "rankroot": { "url": "https://rankroot-ai.netlify.app/api/mcp" }
+    "rankroot": { "url": "https://getrankroot.com/api/mcp" }
   }
 }
 ```
@@ -28,21 +28,21 @@ Claude Desktop / Cursor / any MCP client:
 Claude Code:
 
 ```bash
-claude mcp add --transport http rankroot https://rankroot-ai.netlify.app/api/mcp
+claude mcp add --transport http rankroot https://getrankroot.com/api/mcp
 ```
 
 Then ask: *"Audit example.com's AI visibility and give me the llms.txt."*
 
 ## Limits & Pro
 
-Free: 20 audits per 10 minutes per IP. [RankRoot Pro](https://rankroot-ai.netlify.app/#pricing) adds full-site audits (up to 200 pages), whole-site llms.txt / llms-full.txt / JSON-LD generation and a key for higher API/MCP limits: send `Authorization: Bearer <key>`.
+Free: 20 audits per 10 minutes per IP. [RankRoot Pro](https://getrankroot.com/#pricing) adds full-site audits (up to 200 pages), whole-site llms.txt / llms-full.txt / JSON-LD generation and a key for higher API/MCP limits: send `Authorization: Bearer <key>`.
 
 ## HTTP API
 
 ```
-GET https://rankroot-ai.netlify.app/api/audit?url=example.com
+GET https://getrankroot.com/api/audit?url=example.com
 ```
 
-OpenAPI: https://rankroot-ai.netlify.app/openapi.json
+OpenAPI: https://getrankroot.com/openapi.json
 
 License: MIT (this README and config). The hosted service is operated by RankRoot.
